@@ -1,5 +1,3 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 /* more headers goes there */
 
@@ -13,7 +11,9 @@ int main(void)
 {
 	char alp[] = "abcdefghijklmnopqrstuvwxyz";
 
-	for (int i=0; i<26; i++)
+	int i;
+
+	for (i = 0; i < 26; i++)
 		putchar(alp[i]);
 
 	putchar('\n');
