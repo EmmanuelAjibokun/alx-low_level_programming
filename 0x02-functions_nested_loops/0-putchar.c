@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 
 /* more headers goes there */
 
@@ -8,6 +8,7 @@
  */
 /* betty style doc for function main goes there */
 
+
 int main(void)
 {
 	char a[] = "_putchar";
@@ -16,7 +17,7 @@ int main(void)
 
 	for (i = 0; i < a_size; i++)
 	{
-		putchar(a[i]);
+		_putchar(a[i]);
 	}
 
 	putchar('\n');
