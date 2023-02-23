@@ -12,10 +12,9 @@
 int main(void)
 {
 	char a[] = "_putchar";
-	int a_size = sizeof(a) / sizeof(a[0]);
 	int i;
 
-	for (i = 0; i < a_size; i++)
+	for (i = 0; i < 8; i++)
 	{
 		_putchar(a[i]);
 	}
