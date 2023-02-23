@@ -6,13 +6,13 @@
 
 void times_table(void)
 {
-	int i, j, k;
+	int i, j;
 
 	for (i = 0; i < 9; i++)
 	{
 		for (j = 0; j <= 9; j++)
 		{
-			k = i * j;
+			int k = i * j;
 
 			if (j == 0)
 			{
