@@ -10,9 +10,9 @@ void print_alphabet(void)
 	char alp = "abcdefghijklmnopqrstuvwxyz";
 	int i;
 
-	for (i = 0; i < 26; i++)
+	for (i = 0; i < 10; i++)
 	{
-		_putchar(alp[i]);
+		_putchar(alp);
 		_putchar('\n');
 	}
 
