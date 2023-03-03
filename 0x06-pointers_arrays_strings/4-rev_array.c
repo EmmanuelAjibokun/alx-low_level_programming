@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+
 /**
  * reverse_array - print reverse of array
  * @a: input value
@@ -9,15 +11,20 @@
 
 void reverse_array(int *a, int n)
 {
-	int arr_len, index;
+	int i, index;
 
-	arr_len = sizeof(a) / sizeof(a[0]);
-	index = arr_len - 1;
+	i = n - 1;
+	index = n - 1;
 	while (index >= 0)
 	{
-		_putchar(a[index]);
+		if (index)
+			index = 0;
+		else if (i >= 0)
+			printf(", ");
 
-		index--;
+		printf("%d", a[i]);
+
+		i--;
 	}
-	_putchar('\n');
+	printf("\n");
 }
