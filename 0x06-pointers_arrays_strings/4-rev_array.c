@@ -1,23 +1,23 @@
 #include "main.h"
 /**
- * _ - copy string2 to string1
- * @dest: input value
- * @src: input value
+ * reverse_array - print reverse of array
+ * @a: input value
  * @n: input value
  *
-* Return: dest
+ * Return: void
  */
 
 void reverse_array(int *a, int n)
 {
-	int i, j, new_arr[];
+	int arr_len, index;
 
-	i = 
-	while (i >= 0)
+	arr_len = sizeof(a) / sizeof(a[0]);
+	index = arr_len - 1;
+	while (index >= 0)
 	{
-		new_arr[j] = a[i];
+		_putchar(a[index]);
 
-		j++;
-		i--;
+		index--;
 	}
+	_putchar('\n');
 }
