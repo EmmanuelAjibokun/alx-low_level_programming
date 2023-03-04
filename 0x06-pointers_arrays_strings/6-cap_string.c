@@ -1,15 +1,30 @@
 #include "main.h"
 
 /**
- * cap_string - capitalizes all words of a string.
+ * is_special_char - check for special characters
+ * @c: input value
+ *
+ * Return: int
+ */
+
+/**
+ * cap_string - capitalizes all words of a string
  * @sentence: input value
  *
  * Return: sentence
  */
 
+int is_special_char(char c)
+{
+	if (c == ',' || c == ';' || c == '.' || c == '!' || c == '?' || c == '"' || c == '(' || c == ')' || c == '{' || c == '}')
+		return (1);
+	else
+		return (0);
+}
+
 char *cap_string(char *sentence)
 {
-	int i, j;
+	int i;
 	char first_word;
 
 	first_word = 0;
