@@ -11,15 +11,31 @@
 
 void print_number(int n)
 {
-	int i, length;
-	char int_str[10];
+	unsigned int uns_int, divisor, counter;
 
-	length = snprintf(NULL, 0, "%d", n);
-
-	sprintf(int_str, "%d", n);
-	for (i = 0; i < length; i++)
+	if (n < 0)
 	{
-		_putchar(int_str[i]);
+		_putchar('-');
+		uns_int = n * -1;
+	}
+	else
+	{
+		uns_int = n;
 	}
 
+	divisor = uns_int;
+	counter = 1;
+
+	while (divisor > 9)
+	{
+		divisor /= 10;
+		counter *= 10;
+	}
+
+	while (counter >= 1)
+	{
+		_putchar((uns_int / counter) % 10 + '0');
+
+		counter /= 10;
+	}
 }
