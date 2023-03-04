@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -11,7 +12,7 @@
 void print_number(int n)
 {
 	int i, length;
-	char int_str[0];
+	char int_str[10];
 
 	length = snprintf(NULL, 0, "%d", n);
 
