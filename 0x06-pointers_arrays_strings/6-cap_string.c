@@ -31,7 +31,7 @@ char *cap_string(char *sentence)
 
 	for (i = 0; sentence[i] != '\0'; i++)
 	{
-		if (sentence[i] == ' ' || is_special_char(sentence[i]))
+		if (sentence[i] == ' ' || is_special_char(sentence[i]) || sentence[i] == '\t' || sentence[i] == '\n')
 		{
 			sentence[i] = sentence[i];
 			first_word++;
