@@ -1,9 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "main.h"
+
 /**
  * main - multiplies two numbers.
  * @argc: argument count
  * @argv: argument string array
  *
- * Return: result
+ * Return: 0
  */
 
 int main(int argc, char *argv[])
@@ -15,6 +19,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	result = argv[argc - 2] * argv[argc - 1];
-	return (result);
+	result = atoi(argv[2]) * atoi(argv[1]);
+	printf("%d\n", result);
+	return (0);
 }
