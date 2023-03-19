@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * malloc_checked - concatenates two strings
+ * string_nconcat - concatenates two strings
  * @s1: first string input
  * @s2: second string input
  * @n: index from which to concatenate
