@@ -9,9 +9,9 @@
  */
 struct dog
 {
-	char name[20];
+	char *name;
 	float age;
-	char owner[20];
+	char *owner;
 };
 
 #endif
