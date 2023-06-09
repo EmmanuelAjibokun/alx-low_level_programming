@@ -8,6 +8,7 @@
  * @divisor: number of dividable times
  *
  * Return: 1 for prime numbers, and 0 for non-prime numbers
+ */
 
 int is_prime_num(int n, int min, int divisor)
 {
