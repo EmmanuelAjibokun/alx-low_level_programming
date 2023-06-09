@@ -1,13 +1,13 @@
 #include "main.h"
 
 /*
- * _sqrt_wrapper - Returns the natural square root of a number.
+ * Description - 'Returns the natural square root of a number.'
  * _sqrt_recursion - Calls the recursive function.
  * @n: integer to get squate root
  * @min: lower boundary
  * @max: upper boundary
  *
- * Return: value of root;
+ * Return: _sqrt_wrapper(n, guess + 1, max);
  */
 
 int _sqrt_wrapper(int n, int min, int max)
@@ -22,7 +22,7 @@ int _sqrt_wrapper(int n, int min, int max)
 	if (guess_squared == n)
 		return (guess);
 	else if (guess_squared < n)
-		return(_sqrt_wrapper(n, guess + 1, max));
+		return (_sqrt_wrapper(n, guess + 1, max));
 	else
 		return (_sqrt_wrapper(n, min, guess - 1));
 }
