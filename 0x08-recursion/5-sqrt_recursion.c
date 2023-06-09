@@ -22,9 +22,9 @@ int _sqrt_wrapper(int n, int min, int max)
 	if (guess_squared == n)
 		return (guess);
 	else if (guess_squared < n)
-		_sqrt_wrapper(n, guess + 1, max);
+		return(_sqrt_wrapper(n, guess + 1, max));
 	else
-		_sqrt_wrapper(n, min, guess - 1);
+		return (_sqrt_wrapper(n, min, guess - 1));
 }
 
 int _sqrt_recursion(int n)
