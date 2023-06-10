@@ -14,9 +14,11 @@ int main(int argc, char *argv[])
 {
 	int i, str_len;
 
-	str_len = strlen(argv[0]);
+	str_len = strlen(argv[argc - 1]);
 
 	for (i = 0; i < str_len; i++)
-		_putchar(argv[0][i]);
+		_putchar(argv[argc - 1][i]);
 	_putchar('\n');
+
+	return (0);
 }
