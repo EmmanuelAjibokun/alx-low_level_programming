@@ -12,6 +12,7 @@
 int main(int argc, char *argv[])
 {
 	_putchar('0' + argc - 1);
+	_putchar('\n');
 	(void)argv;
 	return (0);
 }
