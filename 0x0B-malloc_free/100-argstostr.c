@@ -13,7 +13,8 @@
 
 char *argstostr(int ac, char **av)
 {
-	int i, j, counter, total_len;
+	int i, counter, total_len;
+	size_t j;
 	char *ptr;
 
 	counter = 0;
@@ -35,7 +36,7 @@ char *argstostr(int ac, char **av)
 		for (j = 0; j < strlen(av[i]); j++)
 		{
 			ptr[counter] = av[i][j];
-			counter++
+			counter++;
 		}
 
 		ptr[counter] = '\n';
