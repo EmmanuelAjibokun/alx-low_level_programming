@@ -13,23 +13,33 @@
 
 char *argstostr(int ac, char **av)
 {
-	int i;
-	char **ptr;
+	int i, j, counter, total_len;
+	char *ptr;
+
+	counter = 0;
+	total_len = 0;
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
 
-	ptr = (char **)malloc(sizeof(char *) * ac);
+	for (i = 0; i < ac; i++)
+		total_len += strlen(av[i]);
+
+	ptr = (char *)malloc(sizeof(char) * (total_len + ac));
+
 	if (ptr == NULL)
 		return (NULL);
 
 	for (i = 0; i < ac; i++)
 	{
-		str_len = strlen(av[i])
-		ptr[i] = (char *)malloc(sizeof(char) * str_len);
-		if (ptr[i] == NULL)
-			return (NULL);
-		strcpy(ptr[i], av[i]);
+		for (j = 0; j < strlen(av[i]); j++)
+		{
+			ptr[counter] = av[i][j];
+			counter++
+		}
+
+		ptr[counter] = '\n';
+		counter++;
 	}
 
 	return (ptr);
