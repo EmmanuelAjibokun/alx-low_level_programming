@@ -1,3 +1,4 @@
+#include <stddef.h>
 #ifndef _func_ptr_
 #define _func_ptr_
 
