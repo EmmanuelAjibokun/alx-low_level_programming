@@ -17,7 +17,7 @@ int get_bit(unsigned long int n, unsigned int index)
 
 	bin_tracker = 0;
 
-	if (index < 0 || index >= sizeof(int) * 8)
+	if (index >= sizeof(int) * 8)
 		return (-1);
 
 	leftmost = 1 << index;
